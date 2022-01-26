@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Poppins&display=swap");
+
+/* kode di bawah supaya enak mainin margin padding */
+
+* {
+    box-sizing: border-box;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* kode di bawah supaya responsif */
+    width: 100%;
+    height: 100%;
+    /*  */
+    background-image: linear-gradient( 90deg, rgba(0, 0, 0, 0.8) 0%, rgba(67, 67, 67, 0.8) 100%), url(img/blackpink.jpg);
+    z-index: -1;
+    /* kode di bawah supaya gambarnya muat */
+    background-size: cover;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,
+#description {
+    text-align: center;
+    color: white;
+}
+
+form {
+    /* kode di bawah supaya responsif */
+    max-width: 600px;
+    /*  */
+    background-color: rgba(43, 16, 0, 0.6);
+    margin: 0 auto;
+    padding: 40px 30px;
+    color: white;
+    border-radius: 6px;
+}
+
+label {
+    margin-bottom: 25px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    /* kode di bawah supaya label & input atas bawah */
+    display: block;
+    /*  */
+    margin-top: 8px;
+    height: 35px;
+    /* kode di bawah supaya responsif: mengisi ruang yang tersisa */
+    width: 100%;
+    border-radius: 6px;
+    border: 0;
+    padding: 10px;
+    /* kode di bawah untuk mewarisi font family-nya */
+    font-family: inherit;
+}
+
+#opt {
+    margin-bottom: 8px;
+}
+
+.clue {
+    font-size: 14px;
+}
+
+label,
+textarea {
+    display: block;
+    margin-top: 8px;
+    width: 100%;
+    border-radius: 6px;
+    border: 0;
+    font-family: inherit;
+}
+
+textarea {
+    height: 130px;
+    padding: 10px;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background-color: #37af65;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+}
